@@ -22,6 +22,20 @@ var c;
 c=a-b
 alert("Skaitļu summa ir " + c +"!");
 }
+function multiplication(){
+var a =parseFloat(prompt("Pirmais skaitlis"));
+var b =parseFloat(prompt("Otrais skaitlis" )); 
+var c;
+c=a*b
+alert("Skaitļu summa ir " + c +"!");
+}
+function division(){
+var a =parseFloat(prompt("Pirmais skaitlis"));
+var b =parseFloat(prompt("Otrais skaitlis" )); 
+var c;
+c=a/b
+alert("Skaitļu summa ir " + c +"!");
+}
 </script>
 
 </head>
@@ -30,6 +44,9 @@ alert("Skaitļu summa ir " + c +"!");
 <body>
 <button onclick="summ();"> "+" </button>
 <button onclick="minus();"> "-" </button>
+<button onclick="multiplication();"> "*" </button>
+<button onclick="division();"> "/" </button>
+
 </body>
 
 </html>
