@@ -37,13 +37,21 @@ var c;
 c=a/b
 alert("Skaitļu summa ir " + c +"!");
 }
+function fakesumm(){
+var a =(prompt("Pirmais skaitlis","0"));
+var b =(prompt("Otrais skaitlis","0")); 
+var c;
+c=a+b
+alert("Skaitļu summa ir " + c +"!");
+}
 </script>
 
 </head>
 
 
 <body>
-
+<h1 align="center"> сложение как текст </h1>
+<h1 align="center"><button onclick="fakesumm();"> ++ </button>
 <h1 align="center"> сложение </h1>
 <h1 align="center"><button onclick="summ();"> + </button>
 <h1 align="center"> вычитание </h1>
@@ -55,6 +63,7 @@ alert("Skaitļu summa ir " + c +"!");
 <h1 align="center"> деление </h1>
 
 <h1 align="center"><button onclick="division();"> / </button>
+<h1 align="center"> сложение как текст </h1>
 
 <p>! При вводе десятичных чисел, вместо "," используйте "." !</p>
 </body>
