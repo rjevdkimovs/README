@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>calculator</title>
+<meta charset="UTF-8">
+<body bgcolor="#85C1E9"="UTF-8">
+<h1 align="center"> Калькулятор </h1>
+<script>
+function division(){
+var a=document.getElementById("1st").value;
+var b=document.getElementById("2nd").value;
+var c;
+c=a/b;
+document.getElementById("atbilde").innerHTML=c;
+}
+function multiplication(){
+
+var a=document.getElementById("1st");
+var b=document.getElementById("2nd");
+var c;
+c=a*b;
+document.getElementById("atbilde").innerHTML=c;
+}
+function summ(){
+
+var a=document.getElementById("1st");
+var b=document.getElementById("2nd");
+var c;
+c=a+b;
+document.getElementById("atbilde").innerHTML=c;
+}
+function minus(){
+
+var a=document.getElementById("1st");
+var b=document.getElementById("2nd");
+var c;
+c=a-b;
+document.getElementById("atbilde").innerHTML=c;
+}
+</script>
+
+</head>
+
+
+<body>
+<p align="center"><input type="text" id="1st"/>
+<input type="text" id="2nd"/></p>
+<p align="center"><button onclick="division();">/</button></p>
+<p align="center"><button onclick="multiplication();">*</button></p>
+<p align="center"><button onclick="summ();">+</button></p>
+<p align="center"><button onclick="minus();">-</button></p>
+
+<p align="center" id="atbilde"><input type="text" id="atbilde" value="0"/></p>
+<p>! При вводе десятичных чисел, вместо "," используйте "." !</p>
+</body>
+
+</html>
