@@ -1,0 +1,37 @@
+<!DDOCTYPE html>
+
+<html>
+<head>
+	<title>4d</title>
+<meta charset="UTF-8">
+<script>
+function main() {
+var a=~~window.prompt("Введите первое число");
+var b=~~window.prompt("Введите первое число");
+var c=~~window.prompt("Введите первое число");
+if (b>a){
+cache = a
+a = b
+b = cache
+}
+if (c>a){
+cache = a
+a = c
+c = cache
+}
+if (c>b){
+cache = b
+b = c
+c= cache
+}
+window.alert(a)
+window.alert(b)
+window.alert(c)
+}
+</script>
+</head>
+<body>
+<button onclick="main();">click</button>
+</body>
+
+</html>
