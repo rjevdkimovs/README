@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>Time&Date</title>
+<h1 style="font-size:30px" align="center">Time&Date</h1>
+<body style="background-color:powderblue;">
+<body onload="startTime()">
+<h2 style="font-size:22px" id="time" align="center">
+<input type="date" style="font-size:18px" align="center">
+<div id="txt" align="center" ></div>
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+
+}
+
+</script>
+</body>
+</html>
