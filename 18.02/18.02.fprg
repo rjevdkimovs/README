@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rjevdokimovs3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-18 09:56:16 priek&#353;p."/>
+        <attribute name="created" value="cmpldmRva2ltb3ZzMztEWDAyMDQ4NTYwOzIwMjItMDItMTg7MDk6MDc6NDYgcHJpZWvFoXAuOzQxMTE="/>
+        <attribute name="edited" value="cmpldmRva2ltb3ZzMztEWDAyMDQ4NTYwOzIwMjItMDItMTg7MDk6NTY6MTYgcHJpZWvFoXAuOzE7NDIyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="z" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <input variable="z"/>
+            <if expression="z&gt;0">
+                <then>
+                    <assign variable="z" expression="-1*z"/>
+                </then>
+                <else/>
+            </if>
+            <for variable="i" start="-2*z+1" end="1" direction="dec" step="1">
+                <breakpoint/>
+                <output expression="i" newline="True"/>
+                <output expression="z" newline="True"/>
+                <assign variable="z" expression="z+1"/>
+                <output expression="&quot;------------&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

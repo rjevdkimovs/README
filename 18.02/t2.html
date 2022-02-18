@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script>
+function main(){
+	var z;
+	var i;
+	
+	z=window.prompt("Enter a value for z");
+	if(z > 0){
+		z= -1 * z
+	}
+	for (i = -2 * z + 1; i>0 ; i--) {
+	window.alert(z);
+	z = z + 1;
+	}
+}
+</script>
+<button onclick="main();">Click me</button>
+<body onload="main();">
+</body>
+</html>
