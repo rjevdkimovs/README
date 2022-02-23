@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rjevdokimovs3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-23 09:54:02 priek&#353;p."/>
+        <attribute name="created" value="cmpldmRva2ltb3ZzMztEWDAyMDQ4MzE5OzIwMjItMDItMjM7MDk6Mzc6NTcgcHJpZWvFoXAuOzQxMTQ="/>
+        <attribute name="edited" value="cmpldmRva2ltb3ZzMztEWDAyMDQ4MzE5OzIwMjItMDItMjM7MDk6NTQ6MDIgcHJpZWvFoXAuOzE7NDIxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="st" type="Integer" array="False" size=""/>
+            <declare name="en" type="Integer" array="False" size=""/>
+            <declare name="korzinka" type="Integer" array="False" size=""/>
+            <assign variable="korzinka" expression="0"/>
+            <input variable="st"/>
+            <input variable="en"/>
+            <breakpoint/>
+            <for variable="i" start="st" end="en" direction="inc" step="1">
+                <if expression="i mod 3 ==0">
+                    <then>
+                        <assign variable="korzinka" expression="korzinka+1"/>
+                        <output expression="korzinka" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
