@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rjevdokimovs3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-25 09:12:03 priek&#353;p."/>
+        <attribute name="created" value="cmpldmRva2ltb3ZzMztEWDAyMDQ4NTYwOzIwMjItMDItMjU7MDg6MzI6MjggcHJpZWvFoXAuOzQxMDY="/>
+        <attribute name="edited" value="cmpldmRva2ltb3ZzMztEWDAyMDQ4NTYwOzIwMjItMDItMjU7MDk6MTI6MDMgcHJpZWvFoXAuOzE7NDIwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="start" type="Real" array="False" size=""/>
+            <declare name="end" type="Real" array="False" size=""/>
+            <declare name="neparnoe" type="Real" array="False" size=""/>
+            <declare name="parnoe" type="Real" array="False" size=""/>
+            <assign variable="neparnoe" expression="0"/>
+            <assign variable="parnoe" expression="0"/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <input variable="start"/>
+            <input variable="end"/>
+            <for variable="a" start="start" end="end" direction="inc" step="1">
+                <if expression="a%2==0">
+                    <then>
+                        <assign variable="parnoe" expression="parnoe+1"/>
+                    </then>
+                    <else>
+                        <assign variable="neparnoe" expression="neparnoe+1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="parnoe" newline="True"/>
+            <output expression="neparnoe" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

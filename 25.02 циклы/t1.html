@@ -1,0 +1,38 @@
+<!DDOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title> random number from 1-3</title>
+<script>
+function main() {
+    var i;
+    var f;
+    var a;
+    var parsumm;
+    var neparsumm;
+	parsumm = 0;
+    neparsumm = 0;
+    i = 1*window.prompt('Enter a value for i');
+    f = 1*window.prompt('Enter a value for f');
+    for (a = i; a <= f; a++) {
+        if (a % 2 == 0) {
+            parsumm = parsumm + a;
+        } else {
+            neparsumm = neparsumm + a;
+        }
+    }
+    window.alert(parsumm);
+    window.alert(neparsumm);
+}
+
+</script>
+</head>
+<body>
+<center>
+
+<button onclick="main();"> сортировка негров </button>
+</center>
+</body>
+
+</html>

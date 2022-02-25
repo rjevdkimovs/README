@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<script>
+function main(){
+	var a;
+	var i;
+	
+	a = window.prompt("Enter a value for a");
+	if (a > 0) {
+		for (i = a; i >= 0; i--) {
+			document.write(i + ", ");
+			setInterval(fake,1000);
+		}
+	}  else	{
+		window.alert("skaitlis neatbilst prasībam, z>0");
+	}
+}	
+function fake(){
+
+}
+</script>
+<button onclick="main();">Click me</button>
+<body onload="main();">
+</body>
+</html>

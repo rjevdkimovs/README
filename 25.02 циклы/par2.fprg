@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rjevdokimovs3"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-02-25 09:20:00 priek&#353;p."/>
+        <attribute name="created" value="cmpldmRva2ltb3ZzMztEWDAyMDQ4NTYwOzIwMjItMDItMjU7MDk6MTI6MDYgcHJpZWvFoXAuOzQxMDE="/>
+        <attribute name="edited" value="cmpldmRva2ltb3ZzMztEWDAyMDQ4NTYwOzIwMjItMDItMjU7MDk6MjA6MDAgcHJpZWvFoXAuOzE7NDIwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Real" array="False" size=""/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="parsumm" type="Real" array="False" size=""/>
+            <assign variable="parsumm" expression="0"/>
+            <declare name="neparsumm" type="Real" array="False" size=""/>
+            <assign variable="neparsumm" expression="0"/>
+            <for variable="a" start="i" end="f" direction="inc" step="1">
+                <if expression="a%2==0">
+                    <then>
+                        <assign variable="neparsumm" expression="neparsumm+a"/>
+                    </then>
+                    <else>
+                        <assign variable="parsumm" expression="parsumm+a"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="parsumm" newline="True"/>
+            <output expression="neparsumm" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
