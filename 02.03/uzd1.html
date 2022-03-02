@@ -1,0 +1,34 @@
+<!DDOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+</head>
+<body>
+<script>
+function main() {
+    var N;
+    var nn;
+    var x;
+    var k;
+    var d;
+    k = 0;
+    d = 0;
+    N = 1*window.prompt('Enter a value for N');
+    nn = N * 100;
+    x =1*window.prompt('Enter a value for x');
+    while (k < nn) {
+        d = d + 1;
+        k = k + x;
+        x = x * 2;
+    }
+    window.alert(k);
+    window.alert(d-1);
+}
+
+</script>
+<button onclick="main();">Push me</button>
+</body>
+
+</html>
