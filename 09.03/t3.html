@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+
+<html> 
+<head>  
+<title></title>  
+<meta charset="UTF-8">  
+</head>
+<script>
+function main() {
+    var a;
+	var atb=0;
+	var i=0;
+    a = window.prompt('Enter a value for a');
+    do {
+        a = a % 10;
+			alert(a[i]);
+	atb-=parseInt(a[i]);
+	alert(atb);
+    } while (a > 0);
+}
+
+</script>
+<button onclick="main();">Push me</button>
+</body> 
+</html> 
+
+ 
