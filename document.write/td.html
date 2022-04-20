@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+<title>Canvas</title> 
+
+<meta charset="UTF-8"> 
+
+</head> 
+
+
+
+<body> 
+ <canvas id="myCanvas" width="1920" height="500">
+</canvas>
+
+<script>
+var a,r,g,b;
+    function fr(){
+    r=document.getElementById("fr").value;
+    a="rgb("+r+","+g+","+b+")"
+    document.body.style.backgroundColor=a;
+    }
+    function fg(){
+    g=document.getElementById("fg").value;
+    a="rgb("+r+","+g+","+b+")"
+    document.body.style.backgroundColor=a;
+    }
+    function fb(){
+    b=document.getElementById("fb").value;
+    a="rgb("+r+","+g+","+b+")"
+    document.body.style.backgroundColor=a;
+    }
+    function fon(){
+    a="rgb("+r+","+g+","+b+")"
+    document.body.style.backgroundColor=a;
+    }
+a="rgb("+r+","+g+","+b+")" //rgb(125,200,78)
+
+    var c=document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(250,250,150,0,2 * Math.PI);
+    ctx.strokeStyle = a;
+    ctx.stroke();
+
+
+</script>
+<input type="range" min="0" max="255" id="fr" onchange="fr();">
+<input type="range" min="0" max="255" id="fg" onchange="fg();">
+<input type="range" min="0" max="255" id="fb" onchange="fb();">
+<input type="button" onclick="fon">
+</body> 
+
+</html>

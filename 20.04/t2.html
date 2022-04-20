@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+function main() {
+var a;
+var b; b=""
+a=document.getElementById("d").value;
+b=b+"<p>Esoša pozicija: " +a+ "</p>";
+document.getElementById("izvade").innerHTML=b
+}
+</script>
+</head>
+<input type="range" min="0" max="500" value="0" id="d" onchange="main();" "printpoz()">
+<div id="izvade"></div>
+</body>
+</html>
+
