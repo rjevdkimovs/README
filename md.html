@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+
+<html> 
+<head> 
+<title>21.04</title> 
+<meta charset="utf-8"> 
+</head> 
+<body>
+<input type="range" min="0" max="410" value="0" id="byOY" onchange="main()">
+<input type="range" min="0" max="410" value="0" id="byOX" onchange="main()">
+<canvas id="Canvas" width="440" height="440" style="border:1px solid #000000;">
+<div id="izv"></div>
+</body> 
+<script>
+var x,y,w,h,m,z;
+function main(){
+    m=document.getElementById("Canvas");
+    z = m.getContext("2d");
+    w=document.getElementById("byOX").value;
+    h=document.getElementById("byOY").value;
+    z.clearRect(0, 0, 440, 440);
+    z.fillStyle = "blue";
+    z.fillRect(w, h, 30 ,30);
+    }
+</script>
+</html>
