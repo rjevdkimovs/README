@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+<title>22.04</title> 
+
+<meta charset="utf-8"> 
+
+</head> 
+
+<body>
+<button onclick="sk()" >Click</button>
+<button onclick="cnt()">Spawn</button>
+<canvas id="Canvas" width="500" height="500" style="border:1px solid #000000;">
+
+</body> 
+
+<script>
+var a;
+var x=0;
+var y=0;
+var dist;
+function sk(){
+	a=window.prompt("сколько квадратов: ");
+}
+var m;
+function cnt(){
+while(a>0){
+	a=a-1;
+	m=document.getElementById("Canvas");
+	var ctx = m.getContext("2d");
+	/*var canvas=document.getElementById("Canvas");*/
+    ctx.fillRect(x, y, 30 ,30);
+	x=x+125;
+	}
+}
+
+
+</script>
+
+</html>
