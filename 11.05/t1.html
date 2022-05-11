@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+<title>11.05</title> 
+
+<meta charset="utf-8"> 
+
+</head> 
+
+<body>
+
+<script>
+var a=0;
+var b=0;
+var s=0;
+var m=0;
+
+function laukums(a,b){
+s=a*b;
+return s;
+}
+
+function mmm(a,b){
+m=a/1000;
+return m;
+}
+function cmm(a,b){
+m=a/100;
+return m;
+}
+function mm(a,b){
+m=a*1;
+return m;
+}
+function mkm(a,b){
+m=a*1000;
+return m;
+}
+function apr(){
+a=parsefloat(document.getElementById("t1").value);
+b=parsefloat(document.getElementById("t2").value);
+laukums(a,b);
+alert(s);
+}
+}function main(){
+a=parsefloat(document.getElementById("t1").value);
+b=parsefloat(document.getElementById("t2").value);
+mmm(a);
+alert(m);
+}
+
+</script>
+
+<div><input type="button" id="b1" value="Click!" onclick="apr()"></div><p>
+<div>
+<input type="radio" id="b1" name="den4ik" value="mm"><label for="louie">mm</label>
+<input type="radio" id="b1" name="den4ik" value="cm"><label for="louie">cm</label>
+<input type="radio" id="b1" name="den4ik" value="m"><label for="louie">m</label>
+<input type="radio" id="b1" name="den4ik" value="km"><label for="louie">km</label>
+</div>
+<div><input type="text" id="t1" value="5"><input type="text" id="t2" value="5"></div>
+<div>
+<input type="radio" id="b1" name="ignat" value="mm"><label for="louie">mm</label>
+<input type="radio" id="b1" name="ignat" value="cm"><label for="louie">cm</label>
+<input type="radio" id="b1" name="ignat" value="m"><label for="louie">m</label>
+<input type="radio" id="b1" name="ignat" value="km"><label for="louie">km</label>
+</div>
+</body>
+</html>
