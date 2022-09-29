@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function putj(val){
+	document.getElementById("value S").value;
+}
+function time(val){
+	document.getElementById("value Time").value;
+}
+function speed(val){
+	document.getElementById("value Speed").value;              
+}
+</script>
+</head>
+
+<body>
+
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">
+</canvas>
+<script>
+
+</script>
+<br><input type="range" id="S" min="0" max="150" onchange="putj(this.value)"> Ceļš(km)<input id="S" value="0"> <br>
+<br><input type="range" id="Time" min="0" max="20" onchange="time(this.value)"> Laiks(h)<input id="Time" value="0"><br>
+<br><input type="range" id="Speed" min="0" max="100" onchange="speed(this.value)"> Ātrums(km/h)<input id="Speed" value="0"><br>
+</body>
+</html>
