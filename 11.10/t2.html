@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function putj(){
+	var a=document.getElementById('S').value;
+	document.getElementById('dist').value=a;
+}
+function time(){
+	var a=document.getElementById('Time').value;
+	document.getElementById('Time1').value=a;
+}
+function speed(){
+	var a=document.getElementById('Speed').value;
+	document.getElementById('Speed1').value=a;
+}
+</script>
+</head>
+
+<body>
+
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">
+</canvas>
+
+<br><input type="range" id="S" min="1" max="500" onchange="putj()"> Ceļš(km)<input id="dist" value="0" onchange="slidercheck();"> 
+<input type="radio" id="putj()" name="const" value="S">
+  <label for="html">S=const</label><br>
+<br><input type="range" id="Time" min="1" max="500" onchange="time()"> Laiks(h)<input id="Time1" value="0" onchange="slidercheck();">
+<input type="radio" id="time()" name="const" value="Time">
+  <label for="html">t=const</label><br>
+<br><input type="range" id="Speed" min="1" max="500" onchange="speed()"> Ātrums(km/h)<input id="Speed1" value="0" onchange="slidercheck();">
+<input type="radio" id="Speed" name="const" value="Speed">
+  <label for="html">v=const</label><br>
+</body>
+</html>
