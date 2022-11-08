@@ -2,11 +2,10 @@
 <html>
 <head>
  <meta charset="UTF-8">
- <h2>Kas ir API</h2>
+ <h1>API – Application Programming Interface</h1>
  <p style="text-align:center; color:purple;">Kas ir API vienkāršā izteiksmē?</p>
- <p>API – Application Programming Interface,</p>
-kas nozīmē lietojumprogrammu saskarni.
-API kontekstā vārds "lietojumprogramma" attiecas uz jebkuru programmatūras daļu ar noteiktu funkciju.</p>
+ <p>Kas ir API</p>
+API kontekstā vārds "lietojumprogramma" attiecas uz jebkuru programmatūras daļu ar noteiktu funkciju.<br>
 Interfeisu var uzskatīt par pakalpojumu līgumu starp divām lietojumprogrammām.</p>
 
      <script src="https://timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam">
@@ -15,20 +14,25 @@ Interfeisu var uzskatīt par pakalpojumu līgumu starp divām lietojumprogrammā
 
 <body>
    <script>
-      function date&time() {
-         var apik = document.getElementById("apik");
+      function datetime() {
+         var apikey = document.getElementById("apikey");
+		 var sec = document.getElementById("sec");
+		 var day = ducument.getElementById("day");
 
 
          var test = {
             "async": true,
             "scroosDomain": true,
-            "url": "http://api.timeapi.com/v1/current.json?key=fc823911491cc7cba6a56bb95b0d75f6&q=Amsterdam&aqi=no",
+            "url": "https://timeapi.io/api/Time/current/zone?timeZone=Europe/Amsterdam/key=fc823911491cc7cba6a56bb95b0d75f6&q&aqi=no",
             "headers": {}
          }
+		 S.ajax(datetime).done(function(response){
+			sec.innerHTML = response.year + "sec";
+			day.innerHTMl = response.current.day_day + "day";
+		 });
       }
-      date&time();
+      datetime();
    </script>
-<img width="800" height="309" src="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works.png" data-src="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works.png" alt="что такое api в программировании" class="wp-image-15867 lazyloaded" data-srcset="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works.png 800w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-300x116.png 300w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-250x97.png 250w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-120x46.png 120w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-90x35.png 90w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-320x124.png 320w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-560x216.png 560w" data-sizes="(max-width: 600px) 100vw, 600px" sizes="(max-width: 600px) 100vw, 600px" srcset="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works.png 800w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-300x116.png 300w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-250x97.png 250w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-120x46.png 120w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-90x35.png 90w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-320x124.png 320w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-560x216.png 560w"> 
-<p><img width="800" height="418" src="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies.png" data-src="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies.png" alt="api пример" class="wp-image-15868 lazyloaded" data-srcset="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies.png 800w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-300x157.png 300w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-250x131.png 250w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-120x63.png 120w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-90x47.png 90w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-320x167.png 320w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-560x293.png 560w" data-sizes="(max-width: 600px) 100vw, 600px" sizes="(max-width: 600px) 100vw, 600px" srcset="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies.png 800w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-300x157.png 300w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-250x131.png 250w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-120x63.png 120w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-90x47.png 90w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-320x167.png 320w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-560x293.png 560w"></p>
+<img src="https://learn.g2.com/hubfs/G2CM_FI167_Learn_Article_Images_%5BAPI%5D_Infographic_V1a.png" style="   aspect-ratio: 690.0 / 316.0" srcset="https://learn.g2.com/hs-fs/hubfs/G2CM_FI167_Learn_Article_Images_%5BAPI%5D_Infographic_V1a.png?width=690 690w, https://learn.g2.com/hs-fs/hubfs/G2CM_FI167_Learn_Article_Images_%5BAPI%5D_Infographic_V1a.png?width=671 671w, https://learn.g2.com/hs-fs/hubfs/G2CM_FI167_Learn_Article_Images_%5BAPI%5D_Infographic_V1a.png?width=652 652w, https://learn.g2.com/hs-fs/hubfs/G2CM_FI167_Learn_Article_Images_%5BAPI%5D_Infographic_V1a.png?width=502 502w, https://learn.g2.com/hs-fs/hubfs/G2CM_FI167_Learn_Article_Images_%5BAPI%5D_Infographic_V1a.png?width=502 502w" sizes="(max-width: 599px) 502px, (max-width: 749px) 502px, (max-width: 999px) 652px, (max-width: 1269px) 671px, 690px"><img width="800" height="418" src="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies.png" data-src="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies.png" alt="api пример" class="wp-image-15868 lazyloaded" data-srcset="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies.png 800w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-300x157.png 300w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-250x131.png 250w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-120x63.png 120w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-90x47.png 90w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-320x167.png 320w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-560x293.png 560w" data-sizes="(max-width: 600px) 100vw, 600px" sizes="(max-width: 600px) 100vw, 600px" srcset="https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies.png 800w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-300x157.png 300w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-250x131.png 250w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-120x63.png 120w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-90x47.png 90w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-320x167.png 320w, https://hostiq.ua/blog/wp-content/uploads/2021/11/how-api-works-for-newbies-560x293.png 560w"></p>
 </body>
 </html>
