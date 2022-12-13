@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+
+<title>13.12</title> 
+
+<meta charset="UTF-8"> 
+<script>
+var abc;
+    let mas=[];
+    var res=""; 
+ function papild(){
+    abc=document.getElementById("piev").value;
+    mas.unshift(abc);
+      res="";
+      document.getElementById("piev").value = "";
+
+ } 
+function izvade(){
+	
+	a=Math.round(Math.random()*4+1);
+    document.getElementById("picture").src = " "+ a + ".jpg"	
+ }  
+</script>
+	<input type="file"
+       id="log"
+	   name="log"
+       accept="image/jpg">
+
+
+</head> 
+<body> 
+<button onclick="izvade();">Izvadīt</button>
+<img id="picture" ></p>
+</body> 
+
+</html> 
+</html> 
