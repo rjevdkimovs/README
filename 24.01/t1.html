@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+
+<html> 
+<meta charset="UTF-8"> 
+
+<head> 
+
+<style>
+
+</style>
+
+<title>main</title> 
+</head> 
+
+  
+
+<body> 
+<script>
+// Javascript implementation of QuickSort
+
+
+// A utility function to swap two elements
+function swap(arr, i, j) {
+	let temp = arr[i];
+	arr[i] = arr[j];
+	arr[j] = temp;
+}
+/*
+Функция берёт пивот за последний эллемент и ставит
+его в правильное место в сортированнном массиве, и 
+переводит все маленькие числа (меньше пивота на левую сторону)
+А направа все числа больше пивота
+*/
+function partition(arr, low, high) {
+
+	// pivot
+	let pivot = arr[high];
+
+	// Index of smaller element and
+	// indicates the right position
+	// of pivot found so far
+	let i = (low - 1);
+
+	for (let j = low; j <= high - 1; j++) {
+
+		//если текущий эллемент <pivot
+		if (arr[j] < pivot) {
+
+			//меняет индекс среднего эллемента
+			i++;
+			swap(arr, i, j);
+		}
+	}
+	swap(arr, i + 1, high);
+	return (i + 1);
+}
+
+/* сновная функция для quickSort
+		arr[] --> массив для сортировки,
+		low --> Начальный индекс,
+		high --> конечный индекс
+*/
+function quickSort(arr, low, high) {
+	if (low < high) {
+
+		let pi = partition(arr, low, high);
+
+		 //отдельно сортирует эллементы до пивота и после
+		quickSort(arr, low, pi - 1);
+		quickSort(arr, pi + 1, high);
+	}
+}
+//функция,которая пишет массив
+function printArray(arr, size) {
+	for (let i = 0; i < size; i++)
+		document.write(arr[i] + " ");
+
+	document.write("<br>");
+}
+
+
+let arr = [10, 7, 2];
+let n = arr.length;
+//отсортированный массив
+quickSort(arr, 0, n - 1);
+printArray(arr, n);
+
+</script>
+
+
+</body> 
+
+</html> 
